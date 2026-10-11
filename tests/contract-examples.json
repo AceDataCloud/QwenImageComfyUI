@@ -1,0 +1,35 @@
+[
+  {
+    "name": "qwen_image-1",
+    "tool": "qwen_image",
+    "inputs": {
+      "prompt": "Test",
+      "image_urls": "[\"https://example.org/reference.png\"]",
+      "prompt_extend_mode": "agent"
+    },
+    "method": "POST",
+    "path": "/qwen-image/images",
+    "body": {
+      "image_urls": [
+        "https://example.org/reference.png"
+      ],
+      "prompt_extend_mode": "agent"
+    }
+  },
+  {
+    "name": "qwen_image_tasks_retrieve_batch-2",
+    "tool": "qwen_image_tasks_retrieve_batch",
+    "inputs": {
+      "ids": "[\"owned-task\"]"
+    },
+    "method": "POST",
+    "path": "/qwen-image/tasks",
+    "body": {
+      "action": "retrieve_batch",
+      "ids": [
+        "owned-task"
+      ]
+    },
+    "read_only": true
+  }
+]

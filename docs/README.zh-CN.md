@@ -1,0 +1,11 @@
+# Ace Data Cloud 的 ComfyUI Qwen Image 节点
+
+本包独立对应 [QwenImageDify](https://github.com/AceDataCloud/QwenImageDify)，覆盖快照 `7e3866e` 中的 **3 个正式工具定义**和 **2 个固定 model ID**。节点调用 Ace Data Cloud 云 API，无需本地模型或显卡；收费以[当前价格](https://platform.acedata.cloud/models)为准。
+
+[English guide](../README.md)
+
+Registry 版本激活后，在 ComfyUI-Manager 搜索 **Qwen Image**，核对发布者 `acedatacloud` 和包名 **Qwen Image by Ace Data Cloud**，安装并重启。Registry ID 是 `qwen-image`，源码仓库为 `AceDataCloud/QwenImageComfyUI`。源码和上传成功不等于市场可安装。
+
+在**实际 ComfyUI 进程环境**中设置 `ACEDATACLOUD_API_KEY`（也接受 `ACEDATACLOUD_API_TOKEN`），不要写进工作流或仓库。每个 Dify 工具对应一个节点；`parameters_json` 填对应 API 合同的 JSON 对象。model/action 选择器覆盖 Dify YAML 的固定选项，选 `(from JSON/default)` 则使用 JSON 或 API 默认值。任务查询节点可填 `task_id`，批量查询节点可填 `ids_json`。完整字段和 model 列表见[英文主文档](../README.md)。
+
+导入 [01-configure-and-run.json](../examples/01-configure-and-run.json)，先填任务 ID 或 JSON 参数再运行。提交成功不代表媒体完成；用同一个任务 ID 查询至 `succeeded`，把 Ace CDN URL 接到相应 `IMAGE` 节点。收费提交失败时不会自动重试，先查请求记录和价格。删除/归档类动作仍需在 JSON 明确设置 `confirm: true`。详见[隐私说明](PRIVACY.md)。
