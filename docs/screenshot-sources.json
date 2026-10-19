@@ -1,0 +1,38 @@
+{
+  "package": "qwen-image",
+  "files": [
+    {
+      "file": "docs/images/manager-discovery.png",
+      "source_url": "https://github.com/AceDataCloud/Index/actions/runs/38862058594",
+      "date": "2026-10-16",
+      "limits": "Original Linux ComfyUI0.41.0 Manager brand search; not current service-only search or paid generation.",
+      "edits": "none; copied original bytes",
+      "sha256": "d39362a8af32bdc8251b214b4a63285859b0b89959b53f0131e310268641c998"
+    },
+    {
+      "file": "docs/images/manager-installed.png",
+      "source_url": "https://github.com/AceDataCloud/Index/actions/runs/38862058594",
+      "date": "2026-10-16",
+      "limits": "Original enabled-state readback after restart; other packages may be visible. Not a new install or generation.",
+      "edits": "none; copied original bytes",
+      "sha256": "ebc159c3a9f9b12e874ed26dc8fcef30922d2c97168db49b2f6508aaa03aa7ac"
+    },
+    {
+      "file": "docs/images/get-api-key-en.png",
+      "source_url": "https://raw.githubusercontent.com/AceDataCloud/SunoDify/8d3d03570e73324220f111f7fe343da0792a8071/_assets/tutorial/get-api-key-en.png",
+      "date": "2026-10-08",
+      "limits": "Original masked Ace Applications screenshot reused from SunoDify; no credential created or shown.",
+      "edits": "none; copied original bytes",
+      "sha256": "b63787f2bd15af82fef9ab61c99e11c454355ac86e91f7f94559386b795069b7"
+    },
+    {
+      "file": "docs/images/create-api-key-en.png",
+      "source_url": "https://raw.githubusercontent.com/AceDataCloud/SunoDify/8d3d03570e73324220f111f7fe343da0792a8071/_assets/tutorial/create-api-key-en.png",
+      "date": "2026-10-08",
+      "limits": "Original cancelled masked Create dialog. Sample Dify tutorial is renamed ComfyUI in prose; not a ComfyUI Key widget.",
+      "edits": "none; copied original bytes",
+      "sha256": "977c06780b36ca33f2fb3ba546e2594efe5895400e4cb58d842eb564c3bb09da"
+    }
+  ],
+  "new_generation_calls": 0
+}
